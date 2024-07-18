@@ -1,28 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 
-const photoURL = (fname, size) =>
-  `https://d3e8cg7irjennz.cloudfront.net/media/${fname}_${size}.webp`
-
-const getPhotosSizes = (src) => {
-  const urlPattern = /https:\/\/d3e8cg7irjennz.cloudfront.net\/media\/(.+?)_(.+?)\.webp/
-
-  const match = src.match(urlPattern)
-
-  if (match) {
-    const [_, fname] = match
-
-    return {
-      small: photoURL(fname, 'small'),
-      medium: photoURL(fname, 'medium'),
-      large: photoURL(fname, 'large'),
-    }
+export const photoURL = (src) => {
+  if (src.startsWith('http') || src.startsWith('/')) {
+    return src
   }
 
-  return null
+  return `${process.env.IMAGE_DOMAIN}/${src.replace(/^\//, '')}`
 }
 
 const ResponsiveImage = ({ src, alt }) => {
-  const sizes = getPhotosSizes(src)
+  const fullSource = photoURL(src)
 
   // if (sizes) {
   //   const { small, medium, large } = sizes
@@ -51,9 +38,9 @@ const ResponsiveImage = ({ src, alt }) => {
   // }
 
   return (
-    <a href={src}>
+    <a href={fullSource}>
       <img
-        src={src}
+        src={fullSource}
         alt={alt}
         className="mx-auto rounded shadow-md"
         style={{

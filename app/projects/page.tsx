@@ -1,5 +1,5 @@
+import { photoURL } from '@/components/ResponsiveImage'
 import projectsData from '@/data/projectsData'
-import Card from '@/components/Card'
 import { genPageMetadata } from 'app/seo'
 
 export const metadata = genPageMetadata({ title: 'Projects' })
@@ -25,7 +25,7 @@ export default function Projects() {
             {projectsData.map((d) => (
               <div key={d.title} className="my-8 flex w-full">
                 <img
-                  src={d.imgSrc}
+                  src={photoURL(d.imgSrc)}
                   alt={d.title}
                   className="mx-auto mr-4 rounded-lg shadow-xl"
                   style={{ maxWidth: '20em' }}

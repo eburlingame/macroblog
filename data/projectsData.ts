@@ -27,8 +27,7 @@ const projectsData: Project[] = [
     title: 'Uno',
     description: `A web-based, multiplayer version of the classic card game. Build using Go on 
     the backend and TypeScript + React on the frontend.`,
-    imgSrc:
-      'https://d3e8cg7irjennz.cloudfront.net/media/6831d36b656842c1bec23cd2d914aedd_xlarge.webp',
+    imgSrc: '6831d36b656842c1bec23cd2d914aedd_xlarge.webp',
     href: '/blog/the-time-machine',
   },
   {

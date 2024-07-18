@@ -4,6 +4,7 @@ import 'swiper/css'
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react'
+import { photoURL } from './ResponsiveImage'
 
 export type SwiperSliderProps = {
   images: string[]
@@ -15,7 +16,7 @@ const SwiperSlider = ({ images }: SwiperSliderProps) => {
       {images.map((src) => {
         return (
           <SwiperSlide key={src}>
-            <img src={src} className="rounded shadow-md" />
+            <img src={photoURL(src)} className="rounded shadow-md" />
           </SwiperSlide>
         )
       })}
