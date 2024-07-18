@@ -9,9 +9,9 @@ interface Project {
 const projectsData: Project[] = [
   {
     title: 'Macroblog (this site)',
-    description: `Yet another rendition of my personal blog (following the obligatory biannual 
-    re-write of the entire site). This one was built using Next.js and Tailwind CSS, using the
-    Tailwind Nextjs Starter Blog template as a base.`,
+    description: `Yet another rendition of my personal blog (my old was call miniblog). This was
+    part of the Grand tradition of rewriting their entire site every two years. This one was built using Next.js 
+    and Tailwind CSS, using the Tailwind Nextjs Starter Blog template as a base.`,
     imgSrc: '/static/images/macroblog-screenshot.png',
     href: 'https://www.ericburlingame.com',
   },
@@ -27,7 +27,8 @@ const projectsData: Project[] = [
     title: 'Uno',
     description: `A web-based, multiplayer version of the classic card game. Build using Go on 
     the backend and TypeScript + React on the frontend.`,
-    imgSrc: '/static/images/time-machine.jpg',
+    imgSrc:
+      'https://d3e8cg7irjennz.cloudfront.net/media/6831d36b656842c1bec23cd2d914aedd_xlarge.webp',
     href: '/blog/the-time-machine',
   },
   {
