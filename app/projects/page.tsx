@@ -23,11 +23,11 @@ export default function Projects() {
         <div className="mx-w-20 container mx-auto py-12">
           <ul className="flex flex-wrap">
             {projectsData.map((d) => (
-              <div key={d.title} className="mb-4 mb-5 flex w-full">
+              <div key={d.title} className="my-8 flex w-full">
                 <img
                   src={d.imgSrc}
                   alt={d.title}
-                  className="mx-auto mr-4 rounded-lg shadow-lg"
+                  className="mx-auto mr-4 rounded-lg shadow-xl"
                   style={{ maxWidth: '20em' }}
                 />
 
