@@ -1,6 +1,5 @@
 import FullWidthRow from '@/components/FullWidthRow'
 import Link from '@/components/Link'
-import OutsetImage from '@/components/OutsetImage'
 import SwiperSlider from '@/components/SwiperSlider'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
@@ -27,7 +26,7 @@ export default function Home({ posts }) {
   return (
     <>
       <div className="mt-30 text-4xl font-extrabold">Hi there, I'm Eric</div>
-      <div className="mb-10 mt-5 text-lg font-normal">
+      <div className="mb-10 mt-5 text-lg font-normal text-gray-200">
         I am a pilot, photographer, and software engineer living in the beautiful Pacific Northwest.
       </div>
 
@@ -37,13 +36,9 @@ export default function Home({ posts }) {
 
       <div className="mt-16" />
 
-      <FullWidthRow>
-        <SwiperSlider images={separatorSliderImages} />
-      </FullWidthRow>
-
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pb-8 pt-6 md:space-y-5">
-          <h1 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-xl sm:leading-10 md:text-2xl md:leading-14">
+          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:leading-10 md:leading-14">
             Blog
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
@@ -115,7 +110,9 @@ export default function Home({ posts }) {
         </div>
       )}
 
-      <OutsetImage src={closerImage} />
+      <FullWidthRow>
+        <SwiperSlider images={separatorSliderImages} />
+      </FullWidthRow>
     </>
   )
 }

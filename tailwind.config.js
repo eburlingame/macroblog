@@ -32,7 +32,7 @@ module.exports = {
         sans: ['var(--font-default)', ...fontFamily.sans],
       },
       colors: {
-        primary: colors.pink,
+        primary: colors.sky,
         gray: colors.gray,
       },
       typography: ({ theme }) => ({
