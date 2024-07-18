@@ -1,6 +1,6 @@
 # My Personal Blog
 
-This is my personal blog, build using Next.js, Tailwind, using the [Tailwind Next.js Start Blog](https://github.com/timlrx/tailwind-nextjs-starter-blog/) as a template.
+This is my personal blog, built using Next.js, Tailwind, using the [Tailwind Next.js Start Blog](https://github.com/timlrx/tailwind-nextjs-starter-blog/) as a template.
 
 ## Quick Start
 
