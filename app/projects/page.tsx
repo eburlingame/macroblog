@@ -9,25 +9,31 @@ export default function Projects() {
     <>
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pb-8 pt-6 md:space-y-5">
-          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+          <h1 className="sm:leading-10md:leading-14 text-4xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100">
             Projects
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            Showcase your projects with a hero image (16 x 9)
+            Things I've worked on in my spare time.
           </p>
         </div>
-        <div className="container py-12">
-          <div className="-m-4 flex flex-wrap">
+
+        <div className="mx-w-20 container mx-auto py-12">
+          <ul className="flex flex-wrap">
             {projectsData.map((d) => (
-              <Card
-                key={d.title}
-                title={d.title}
-                description={d.description}
-                imgSrc={d.imgSrc}
-                href={d.href}
-              />
+              <div key={d.title} className="mb-5">
+                <a
+                  href={d.href}
+                  className="text-2xl font-bold text-primary-500 hover:text-primary-400 dark:text-gray-400"
+                >
+                  {d.title}
+                </a>
+
+                <img src={d.imgSrc} alt={d.title} className="mt-4" style={{ width: '20em' }} />
+
+                <p className="mt-4 dark:text-gray-200">{d.description}</p>
+              </div>
             ))}
-          </div>
+          </ul>
         </div>
       </div>
     </>

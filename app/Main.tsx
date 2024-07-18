@@ -26,7 +26,7 @@ export default function Home({ posts }) {
   return (
     <>
       <div className="mt-30 text-4xl font-extrabold">Hi there, I'm Eric</div>
-      <div className="mb-10 mt-5 text-lg font-normal text-gray-200">
+      <div className="mb-10 mt-5 text-lg font-normal text-gray-500 dark:text-gray-400">
         I am a pilot, photographer, and software engineer living in the beautiful Pacific Northwest.
       </div>
 
