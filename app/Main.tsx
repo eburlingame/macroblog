@@ -1,18 +1,50 @@
+import FullWidthRow from '@/components/FullWidthRow'
 import Link from '@/components/Link'
+import OutsetImage from '@/components/OutsetImage'
+import SwiperSlider from '@/components/SwiperSlider'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import { formatDate } from 'pliny/utils/formatDate'
-import NewsletterForm from 'pliny/ui/NewsletterForm'
 
 const MAX_DISPLAY = 5
+
+const mastheadSliderImages = [
+  'https://fstop.s3.us-west-2.amazonaws.com/media/ef117c97c3b54db7b7bc96f1684841c0_large.webp',
+  'https://fstop.s3.us-west-2.amazonaws.com/media/ba77b16cf742402b91daace45db5525d_large.webp',
+  'https://fstop.s3.us-west-2.amazonaws.com/media/73973f45b08d42379376e1e9680c1c5e_large.webp',
+]
+
+const separatorSliderImages = [
+  'https://fstop.s3.us-west-2.amazonaws.com/media/360bcc33cd0d4b019f220cd5c6db5244_large.webp',
+  'https://fstop.s3.us-west-2.amazonaws.com/media/8857e66ae665462ba0c53bbb707635c1_large.webp',
+  'https://fstop.s3.us-west-2.amazonaws.com/media/a60390c0f9554b57b6a858ed5cb15fe8_large.webp',
+]
+
+const closerImage =
+  'https://fstop.s3.us-west-2.amazonaws.com/media/3af18871622147e295b7e674c0bff04e_large.webp'
 
 export default function Home({ posts }) {
   return (
     <>
+      <div className="mt-30 text-4xl font-extrabold">Hi there, I'm Eric</div>
+      <div className="mb-10 mt-5 text-lg font-normal">
+        I am a pilot, photographer, and software engineer living in the beautiful Pacific Northwest.
+      </div>
+
+      <FullWidthRow>
+        <SwiperSlider images={mastheadSliderImages} />
+      </FullWidthRow>
+
+      <div className="mt-16" />
+
+      <FullWidthRow>
+        <SwiperSlider images={separatorSliderImages} />
+      </FullWidthRow>
+
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pb-8 pt-6 md:space-y-5">
-          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-            Latest
+          <h1 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-xl sm:leading-10 md:text-2xl md:leading-14">
+            Blog
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
             {siteMetadata.description}
@@ -70,8 +102,9 @@ export default function Home({ posts }) {
           })}
         </ul>
       </div>
+
       {posts.length > MAX_DISPLAY && (
-        <div className="flex justify-end text-base font-medium leading-6">
+        <div className="mb-10 flex justify-end text-base font-medium leading-6">
           <Link
             href="/blog"
             className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
@@ -81,11 +114,8 @@ export default function Home({ posts }) {
           </Link>
         </div>
       )}
-      {siteMetadata.newsletter?.provider && (
-        <div className="flex items-center justify-center pt-4">
-          <NewsletterForm />
-        </div>
-      )}
+
+      <OutsetImage src={closerImage} />
     </>
   )
 }

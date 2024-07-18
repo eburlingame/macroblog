@@ -21,6 +21,13 @@ module.exports = {
         13: '3.25rem',
         14: '3.5rem',
       },
+      margin: {
+        25: '6.25rem',
+        30: '7.5rem',
+        35: '8.75rem',
+        96: '24rem',
+        128: '32rem',
+      },
       fontFamily: {
         sans: ['var(--font-default)', ...fontFamily.sans],
       },

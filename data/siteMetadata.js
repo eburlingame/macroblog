@@ -1,9 +1,9 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: "Eric's Blog",
+  title: 'Eric Burlingame',
   author: 'Eric Burlingame',
   headerTitle: "Eric's Blog",
-  description: 'Erics ramblings about computers, airplanes, and other stuff',
+  description: 'Ramblings about computers, airplanes, and other stuff',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://ericburlingame.com',
