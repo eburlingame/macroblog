@@ -1,11 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 
+const imageDomain = 'https://d3e8cg7irjennz.cloudfront.net/media'
+
 export const photoURL = (src) => {
   if (src.startsWith('http') || src.startsWith('/')) {
     return src
   }
 
-  return `${process.env.IMAGE_DOMAIN}/${src.replace(/^\//, '')}`
+  return `${imageDomain}/${src.replace(/^\//, '')}`
 }
 
 const ResponsiveImage = ({ src, alt }) => {

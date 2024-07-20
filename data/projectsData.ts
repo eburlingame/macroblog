@@ -12,14 +12,14 @@ const projectsData: Project[] = [
     description: `Yet another rendition of my personal blog (my old was call miniblog). This was
     part of the Grand tradition of rewriting their entire site every two years. This one was built using Next.js 
     and Tailwind CSS, using the Tailwind Nextjs Starter Blog template as a base.`,
-    imgSrc: '/static/images/macroblog-screenshot.png',
+    imgSrc: '/static/images/projects/macroblog-screenshot.png',
     href: 'https://www.ericburlingame.com',
   },
   {
-    title: 'Fstop: Dead-simple photo sharing service, written in Go',
+    title: 'Fstop: Dead-simple photo sharing service',
     description: `Outrageously simple server for sharing photos. Written in Go using the Gin 
     framework, images are served from S3 and can be cached behind CloudFront.`,
-    imgSrc: '/static/images/time-machine.jpg',
+    imgSrc: '/static/images/projects/fstop.png',
     href: 'https://github.com/eburlingame/fstop',
     repo: 'https://github.com/eburlingame/fstop',
   },

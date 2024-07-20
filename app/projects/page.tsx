@@ -28,7 +28,7 @@ export default function Projects() {
                   src={photoURL(d.imgSrc)}
                   alt={d.title}
                   className="mx-auto mr-4 rounded-lg shadow-xl"
-                  style={{ maxWidth: '20em' }}
+                  style={{ width: '20em' }}
                 />
 
                 <div>
