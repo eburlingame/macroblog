@@ -1,0 +1,58 @@
+---
+title: Rubick's Cube Solver
+date: '2016-12-27'
+tags: ['projects', 'frontend']
+draft: false
+layout: PostSimple
+summary: Adventures building a web-based Rubik's cube simulator and solver.
+---
+
+A friend of mine recently shared with me his love for solving Rubik’s cubes. Having never actually solved one, he walked me through the steps of solving a single layer, then placing the second, and finally placing putting the top in place. It was oddly satisfying, and I was definitely hooked.
+
+There’s something peculiar about the Rubik’s cube. Of the people I’ve talked to, many will say “oh my brain doesn’t work like that,” or “I just can’t wrap my head around how it moves.” I think most people (and for long time, myself included) believe that you have to have some rare savant power of visualization to solve the cube on your own. But sitting down with someone who knows the puzzle well (and can share their enthusiasm too), you find it’s simply a series of steps that you practice, memorize, and eventually begin to understand.
+
+Having fallen ill during my last week of fall quarter classes at school, I found myself on the couch, shivering from chills: the perfect opportunity to figure it out.
+
+Solving the cube in the traditional method requires a few algorithms, a certain sequence of steps that achieve a specific goal. As you put more and more of the cube in place, the algorithms get longer and more complex as you have to rotate/permute certain faces without disturbing the rest of the cube.
+
+The traditional method generally follows 7 steps:
+
+### 1. Solve the white edges
+
+![](https://ericburlingame-blog.s3-us-west-2.amazonaws.com/blog_images/2016/12/CubeSolutionSteps1.png)
+
+### 2. Solve the white corners
+
+![](https://ericburlingame-blog.s3-us-west-2.amazonaws.com/blog_images/2016/12/CubeSolutionSteps2.png)
+
+### 3. Solve the second layer of the cube
+
+![](https://ericburlingame-blog.s3-us-west-2.amazonaws.com/blog_images/2016/12/CubeSolutionSteps3.png)
+
+### 4. Solve the yellow cross
+
+![](https://ericburlingame-blog.s3-us-west-2.amazonaws.com/blog_images/2016/12/CubeSolutionSteps4.png)
+
+### 5. Solve the yellow face
+
+![](https://ericburlingame-blog.s3-us-west-2.amazonaws.com/blog_images/2016/12/CubeSolutionSteps5.png)
+
+### 6. Permute the yellow corners
+
+![](https://ericburlingame-blog.s3-us-west-2.amazonaws.com/blog_images/2016/12/CubeSolutionSteps6.png)
+
+### 7. Permute the yellow edges
+
+![](https://ericburlingame-blog.s3-us-west-2.amazonaws.com/blog_images/2016/12/CubeSolutionSteps7.png)
+
+In an effort to become better acquainted with the process, I wrote a little cube simulation in HTML / Javascript to play with. I started with a simple simulation of a cube and implemented the 6 different rotations (Front, right, up, left, down, and back). Having a virtual cube to play with, I eventually decided to attempt a solver.
+
+![Solver screenshot](https://ericburlingame-blog.s3-us-west-2.amazonaws.com/blog_images/2016/12/solver_screenshot.png)
+
+Interestingly enough, the real challenge came in the first few steps. Because there are so many initial combinations for a scrambled cube to be in, aligning the white edges usually comes down to simply looking at the cube and reasoning out how to align each edge. This is in contrast to the latter moves, where you would apply an algorithm while the cube is in a given orientation.
+
+Each of the 7 stages starts with the cube in a certain orientation, and then applies a set of algorithms until it reaches a goal. It then continues to the next stage. This emulates how I learned to solve it, and how most people approach the problem. In consequence, the solutions it finds are by no means the simplest (with the fewest possible steps), but it does do a good job emulating how most beginners solve the cube. For this reason, I think the widget is perhaps best used as a learning tool, and can help someone better understand the traditional steps for solving famous puzzle.
+
+Feel free to play with the solver [here](https://rubix.ericburlingame.com/)
+
+![Cube](https://ericburlingame-blog.s3-us-west-2.amazonaws.com/blog_images/2016/12/Rubix-1.jpg)

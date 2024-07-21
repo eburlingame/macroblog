@@ -16,7 +16,7 @@ export default function Projects() {
             Projects
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            Things I've worked on in my spare time.
+            Things I've worked on in my spare time
           </p>
         </div>
 
@@ -31,13 +31,29 @@ export default function Projects() {
                   style={{ width: '20em' }}
                 />
 
-                <div>
-                  <a
-                    href={d.href}
-                    className="w-full text-3xl font-bold text-gray-800 hover:text-gray-400 dark:text-gray-400"
-                  >
-                    {d.title}
-                  </a>
+                <div className="flex flex-col">
+                  <div className="w-full text-3xl font-bold">{d.title}</div>
+
+                  <div className="mt-4 flex">
+                    {d.demoURL && (
+                      <a
+                        target="_blank"
+                        href={d.demoURL}
+                        className="mr-4 text-primary-600 hover:text-primary-400 dark:text-primary-400"
+                      >
+                        Demo
+                      </a>
+                    )}
+                    {d.repoURL && (
+                      <a
+                        target="_blank"
+                        href={d.repoURL}
+                        className="text-primary-600 hover:text-primary-400 dark:text-primary-400"
+                      >
+                        Repo
+                      </a>
+                    )}
+                  </div>
 
                   <p className="mt-4 dark:text-gray-200">{d.description}</p>
                 </div>
