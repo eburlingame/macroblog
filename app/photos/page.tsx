@@ -1,4 +1,4 @@
-import ResponsiveImage, { photoURL } from '@/components/ResponsiveImage'
+import PhotoInfiniteScroll from '@/components/PhotoInfiniteScroll'
 import photoData from '@/data/photoData'
 import { genPageMetadata } from 'app/seo'
 
@@ -18,12 +18,7 @@ export default function Photos() {
         </div>
 
         <div className="mx-w-20 container mx-auto py-12">
-          {photoData.map((photo, index) => (
-            <div key={index} className="mb-8">
-              <ResponsiveImage src={photoURL(photo.src)} alt={photo.caption} />
-              <p className="text-sm text-gray-500 dark:text-gray-400">{photo.caption}</p>
-            </div>
-          ))}
+          <PhotoInfiniteScroll pageSize={6} photos={photoData} />
         </div>
       </div>
     </>

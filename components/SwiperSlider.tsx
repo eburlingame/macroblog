@@ -6,17 +6,25 @@ import 'swiper/css'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { photoURL } from './ResponsiveImage'
 
+export type SwiperImage = {
+  src: string
+  caption?: string
+}
+
 export type SwiperSliderProps = {
-  images: string[]
+  images: SwiperImage[]
 }
 
 const SwiperSlider = ({ images }: SwiperSliderProps) => {
   return (
     <Swiper spaceBetween={30} slidesPerView={1.7} centeredSlides={true} initialSlide={1}>
-      {images.map((src) => {
+      {images.map((img) => {
         return (
-          <SwiperSlide key={src}>
-            <img src={photoURL(src)} className="rounded shadow-md" />
+          <SwiperSlide key={img.src}>
+            <img src={photoURL(img.src)} className="rounded shadow-md" />
+            {img.caption && (
+              <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">{img.caption}</p>
+            )}
           </SwiperSlide>
         )
       })}

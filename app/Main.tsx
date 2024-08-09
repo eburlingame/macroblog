@@ -8,15 +8,15 @@ import { formatDate } from 'pliny/utils/formatDate'
 const MAX_DISPLAY = 5
 
 const mastheadSliderImages = [
-  'ef117c97c3b54db7b7bc96f1684841c0_large.webp',
-  'ba77b16cf742402b91daace45db5525d_large.webp',
-  '73973f45b08d42379376e1e9680c1c5e_large.webp',
+  { src: 'ef117c97c3b54db7b7bc96f1684841c0_large.webp' },
+  { src: 'ba77b16cf742402b91daace45db5525d_large.webp' },
+  { src: '73973f45b08d42379376e1e9680c1c5e_large.webp' },
 ]
 
 const separatorSliderImages = [
-  '360bcc33cd0d4b019f220cd5c6db5244_large.webp',
-  '8857e66ae665462ba0c53bbb707635c1_large.webp',
-  'a60390c0f9554b57b6a858ed5cb15fe8_large.webp',
+  { src: '360bcc33cd0d4b019f220cd5c6db5244_large.webp' },
+  { src: '8857e66ae665462ba0c53bbb707635c1_large.webp' },
+  { src: 'a60390c0f9554b57b6a858ed5cb15fe8_large.webp' },
 ]
 
 const closerImage = '3af18871622147e295b7e674c0bff04e_large.webp'
