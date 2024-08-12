@@ -60,7 +60,7 @@ const photos: FeaturePhotoRow[] = [
   {
     date: 'Tuesday, January  3, 2023',
     src: 'd2b84b6c0cbb473cba0034ea722c89db_large.webp',
-    caption: 'Prospect Park at sunset.',
+    caption: 'Prospect Park, New York at sunset.',
   },
   {
     date: 'Sunday, January  1, 2023',
@@ -75,7 +75,7 @@ const photos: FeaturePhotoRow[] = [
   {
     date: 'Thursday, September 15, 2022',
     src: 'b42a3a52e78646b8923d55f6aef57620_large.webp',
-    caption: 'Looking over tidepools on the eastern shore of Guam.',
+    caption: 'Looking down over tidepools on the eastern shore of Guam.',
   },
   {
     date: 'Tuesday, August  9, 2022',
@@ -110,7 +110,7 @@ const photos: FeaturePhotoRow[] = [
   {
     date: 'Wednesday, December  1, 2021',
     src: 'a809cdff19ef480596519fa216a2f0e1_large.webp',
-    caption: 'Preparing for takeoff in the Piper Cherokee 140.',
+    caption: 'Preparing for takeoff in a Piper Cherokee 140.',
   },
   {
     date: 'Sunday, November 21, 2021',
@@ -165,7 +165,7 @@ const photos: FeaturePhotoRow[] = [
   {
     date: 'Saturday, November 23, 2019',
     src: 'a488fb00ba844c7ebb40fc8923276ee0_large.webp',
-    caption: 'Flying near Mt. Hood from the backseat of a 172.',
+    caption: 'Flying near Mt. Hood in the backseat of a Cessna 172.',
   },
   {
     date: 'Wednesday, August  7, 2019',
@@ -175,7 +175,7 @@ const photos: FeaturePhotoRow[] = [
   {
     date: 'Saturday, July 27, 2019',
     src: '6e894a8d146b46c0a7628af4a05b38de_large.webp',
-    caption: 'Rutan Long-EZ in front of distant thunderstorm at Oshkosh.',
+    caption: 'Rutan Long-EZ in front of a distant thunderstorm at Oshkosh.',
   },
   {
     date: 'Saturday, July 27, 2019',
@@ -215,17 +215,17 @@ const photos: FeaturePhotoRow[] = [
   {
     date: 'Friday, July 27, 2018',
     src: '5f73aafdffe042afa434244c8f3d8e36_large.webp',
-    caption: 'B-29 flying over Oshkosh',
+    caption: 'B-29 flying over Oshkosh.',
   },
   {
     date: 'Thursday, July 26, 2018',
     src: '9387fb7c54e442d5adfcbd2a703577d5_large.webp',
-    caption: 'Night airshow at Oshkosh',
+    caption: 'Night airshow at Oshkosh.',
   },
   {
     date: 'Thursday, July 26, 2018',
     src: '402e7b4f7d344907ac356d0e84de635e_large.webp',
-    caption: 'C-17 arriving at Oshkosh',
+    caption: 'C-17 arriving at Oshkosh.',
   },
   {
     date: 'Wednesday, July 25, 2018',
@@ -240,12 +240,7 @@ const photos: FeaturePhotoRow[] = [
   {
     date: 'Tuesday, July  3, 2018',
     src: 'c1bf028b55ed4470b357fa4719a2ac90_large.webp',
-    caption: 'Bangkok at sunset',
-  },
-  {
-    date: 'Monday, July  2, 2018',
-    src: '87ddd12e99954a5ab5e8fb42231a72f7_large.webp',
-    caption: 'Wet roads in Bangkok after a storm.',
+    caption: 'Bangkok skyline at sunset.',
   },
   {
     date: 'Sunday, July  1, 2018',
@@ -264,52 +259,52 @@ const photos: FeaturePhotoRow[] = [
   {
     date: 'Sunday, June 24, 2018',
     src: '084cd1159cb84afdbbbffbcb7b440c5e_large.webp',
-    caption: "Bilbao's Guggenheim Museum",
+    caption: "Bilbao, Spain's Guggenheim Museum.",
   },
   {
     date: 'Sunday, June 24, 2018',
     src: '5b28984c00d34e3e809e68253a97ed7c_large.webp',
-    caption: 'Statue in Bilbao',
+    caption: 'Statue in Bilbao, Spain.',
   },
   {
     date: 'Sunday, June 24, 2018',
     src: '0bded8501e344d45b3c9d470a264144d_large.webp',
-    caption: 'Street in Bilbao',
+    caption: 'Street in Bilbao, Spain.',
   },
   {
     date: 'Saturday, June 23, 2018',
     src: '9ee4a4770c4c479aa48acb7a796e6491_large.webp',
-    caption: 'Westminster Abbey in London',
+    caption: 'Westminster Abbey in London.',
   },
   {
     date: 'Saturday, June  9, 2018',
     src: '2d4f01b7c8964e65abdc0ec8ece75a96_large.webp',
-    caption: 'Sunset in the hills of San Luis Obispo',
+    caption: 'Sunset in the hills of San Luis Obispo.',
   },
   {
     date: 'Saturday, May 26, 2018',
     src: 'b468fdc28e084612ac65701218971fc2_large.webp',
-    caption: 'Sunset at the Avenal airport',
+    caption: 'Sunset at the Avenal gliderport.',
   },
   {
     date: 'Saturday, May 26, 2018',
     src: 'c177f0189a954a3aaeb1a398cfdcbe8d_large.webp',
-    caption: 'Hills near Avenal, CA',
+    caption: 'Hills near Avenal, CA.',
   },
   {
     date: 'Saturday, May 19, 2018',
     src: '14a3482aa266460c8c8a077c4c7370ce_large.webp',
-    caption: 'Goodyear blimp over the central coast of California',
+    caption: "Goodyear blimp over California's central coast",
   },
   {
     date: 'Monday, February 19, 2018',
     src: '83ee618d00c84ddc82a0ae6e3b913912_large.webp',
-    caption: '757 departing from LAX',
+    caption: '757 departing from LAX.',
   },
   {
     date: 'Monday, February 19, 2018',
     src: 'f28db644abd04ae188bc4029eeb766a9_large.webp',
-    caption: 'Southwest 737 landing at LAX',
+    caption: 'Southwest 737 landing at LAX.',
   },
   {
     date: 'Thursday, December 14, 2017',
@@ -319,112 +314,102 @@ const photos: FeaturePhotoRow[] = [
   {
     date: 'Saturday, October 14, 2017',
     src: '7ff8752736a74e6283946e04fd97c529_large.webp',
-    caption: 'Cessna 150 taking from from the Avenal airport',
+    caption: 'Cessna 150 taking from from the Avenal airport.',
   },
   {
     date: 'Sunday, October  1, 2017',
     src: '32f6eebdfcc74e41bf1189a51ae7d4cf_large.webp',
-    caption: 'T-6 Texan at a California Airshow',
+    caption: 'T-6 Texan at the California International Airshow.',
   },
   {
     date: 'Saturday, September 30, 2017',
     src: '275e2c801d6f469c8fd06ed3bb4ebb85_large.webp',
-    caption: 'Bonanza over the San Luis Obispo airport',
-  },
-  {
-    date: 'Saturday, September 30, 2017',
-    src: '517915fc801d4628a04d5e846b5cb4e2_large.webp',
-    caption: 'Control tower at the San Luis Obispo airport',
+    caption: 'Bonanza over the San Luis Obispo airport.',
   },
   {
     date: 'Saturday, September 16, 2017',
     src: '287e082129c54779b3afe69bd83b5790_large.webp',
-    caption: 'Schweizer 2-33 glider taking off from the Avenal gliderport',
+    caption: 'Schweizer 2-33 glider taking off from the Avenal gliderport.',
   },
   {
     date: 'Thursday, September  7, 2017',
     src: '3a0231cad1ca4804b815dcc10c529f6e_large.webp',
-    caption: "Blue water off Hawaii's big island",
+    caption: "Blue water off Hawaii's big island.",
   },
   {
     date: 'Tuesday, August 22, 2017',
     src: 'cfb9bd5c4a904ad9a7d0e94916b90a0f_large.webp',
-    caption: 'Snoqualmie falls from the air',
-  },
-  {
-    date: 'Thursday, March  9, 2017',
-    src: '3e285a3b6fa24764bfdebdaff7d44afc_large.webp',
-    caption: 'Green hills of the central coast of California',
+    caption: 'Snoqualmie Falls from the air.',
   },
   {
     date: 'Saturday, January 28, 2017',
     src: '1c66ba247cc244b682da4d194bd1e3f0_large.webp',
-    caption: 'Schweizer 2-33 glider at the Avenal gliderport',
+    caption: 'Schweizer 2-33 glider at the Avenal gliderport.',
   },
   {
     date: 'Saturday, January 28, 2017',
     src: '1b7d4c05c2a1447995e71c1078fd510b_large.webp',
-    caption: 'Panel of a Schweizer 2-33 under tow',
+    caption: 'Panel of a Schweizer 2-33 under tow.',
   },
   {
     date: 'Saturday, July  9, 2016',
     src: '3eb14f502989473aa099b1f98276f6b3_large.webp',
-    caption: 'Spectators watching the Arlington Fly-In airshow',
+    caption: 'Spectators watching the Arlington Fly-In airshow.',
   },
   {
     date: 'Sunday, May 29, 2016',
     src: 'c1e4658b43ed4d758013c56bcaa456e0_large.webp',
-    caption: 'Sunset over a beach in Pismo, CA',
+    caption: 'Sunset over a beach in Pismo, CA.',
   },
   {
     date: 'Saturday, August 15, 2015',
     src: 'e7a6d1a3683944b6a6424d684690d6f4_large.webp',
-    caption: 'Sunrise on Mt. Adams, WA',
+    caption: 'Sunrise on Mt. Adams, WA.',
   },
   {
     date: 'Saturday, August 15, 2015',
     src: 'd53ff1e425eb4d3f8a50cf91cdd6b7c3_large.webp',
-    caption: 'Snow-covered Mt. Adams',
+    caption: 'Snow-covered Mt. Adams.',
   },
   {
     date: 'Sunday, May  3, 2015',
     src: '3c2680c72a3e438893807eb4bfa54d05_large.webp',
-    caption: 'Sunset at Montaña de Oro State Park',
+    caption: 'Sunset at Montaña de Oro State Park.',
   },
   {
     date: 'Saturday, December 13, 2014',
     src: '357f730e70e54c25807d8573e11ab554_large.webp',
-    caption: 'Dramatic sky over an U.S. Airways A320 in Phoenix',
+    caption: 'Dramatic sky over an U.S. Airways A320 in Phoenix.',
   },
   {
     date: 'Saturday, November 22, 2014',
     src: '19134022f7f344a59c27bcf120f78bb6_large.webp',
-    caption: 'Mission in Santa Barbara, CA',
+    caption: 'Mission in Santa Barbara, CA.',
   },
   {
     date: 'Saturday, October 11, 2014',
     src: '13004c8d16fb45c1a3663b893df257e0_large.webp',
-    caption: 'Sunrise from Bishop Peak, San Luis Obispo, CA',
+    caption: 'Sunrise from Bishop Peak, San Luis Obispo, CA.',
   },
   {
     date: 'Tuesday, September  9, 2014',
     src: '6bf3532efcde4710a2b1564e61cb1a7b_large.webp',
-    caption: 'Lining up to land in Friday Harbor, WA',
+    caption: 'Lining up to land in Friday Harbor, WA.',
   },
   {
     date: 'Wednesday, July  3, 2013',
     src: 'f53b288fe7d04317964bd33cd6a6b2b4_large.webp',
-    caption: 'Port on the island of Capri, Italy',
+    caption: 'Port on the island of Capri, Italy.',
   },
   {
     date: 'Tuesday, July  2, 2013',
     src: 'c74796bc3b424152a4bffb739ed1af3c_large.webp',
-    caption: 'Sunset in Sorrento, Italy',
+    caption: 'Sunset in Sorrento, Italy.',
   },
   {
     date: 'Saturday, June 29, 2013',
     src: 'b6751f480aff49969c67e8b09fedcc30_large.webp',
-    caption: 'Flowers in Sorrento, Italy',
+    caption: 'Flowers in Sorrento, Italy.',
   },
 ]
 

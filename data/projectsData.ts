@@ -13,7 +13,7 @@ const projectsData: Project[] = [
     Grown out of my own internal study guides, I'm hoping to make this a community-driven
     reference site for pilots.`,
     imgSrc: '/static/images/projects/flightdocs.png',
-    demoURL: 'https://flightdocs.io',
+    demoURL: 'https://flightdocs.io/docs',
     repoURL: 'https://github.com/eburlingame/flightdocs',
   },
   {
