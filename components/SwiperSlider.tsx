@@ -23,7 +23,7 @@ const SwiperSlider = ({ images }: SwiperSliderProps) => {
           <SwiperSlide key={img.src}>
             <img src={photoURL(img.src)} className="rounded shadow-md" />
             {img.caption && (
-              <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">{img.caption}</p>
+              <p className="ml-2 text-sm text-gray-500 dark:text-gray-400">{img.caption}</p>
             )}
           </SwiperSlide>
         )
