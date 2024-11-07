@@ -8,7 +8,7 @@ export type ImageSliderProps = {
 const ImageSlider = ({ images }: ImageSliderProps) => {
   return (
     <FullWidthRow>
-      <SwiperSlider images={images} />
+      <SwiperSlider images={images} initialSlide={0} />
     </FullWidthRow>
   )
 }

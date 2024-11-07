@@ -4,6 +4,8 @@ import 'swiper/css'
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react'
+import useBreakpoint from 'use-breakpoint'
+import { BREAKPOINTS } from './breakpoints'
 import { photoURL } from './ResponsiveImage'
 
 export type SwiperImage = {
@@ -13,11 +15,21 @@ export type SwiperImage = {
 
 export type SwiperSliderProps = {
   images: SwiperImage[]
+  initialSlide?: number
 }
 
-const SwiperSlider = ({ images }: SwiperSliderProps) => {
+const SwiperSlider = ({ images, initialSlide = 1 }: SwiperSliderProps) => {
+  const { breakpoint } = useBreakpoint(BREAKPOINTS, 'mobile')
+
+  const slidePerView = breakpoint === 'mobile' ? 1.2 : breakpoint === 'tablet' ? 1.4 : 1.9
+
   return (
-    <Swiper spaceBetween={30} slidesPerView={1.5} centeredSlides={true} initialSlide={1}>
+    <Swiper
+      spaceBetween={30}
+      slidesPerView={slidePerView}
+      centeredSlides={true}
+      initialSlide={initialSlide}
+    >
       {images.map((img) => {
         return (
           <SwiperSlide key={img.src}>
