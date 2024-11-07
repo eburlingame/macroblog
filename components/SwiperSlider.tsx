@@ -17,7 +17,7 @@ export type SwiperSliderProps = {
 
 const SwiperSlider = ({ images }: SwiperSliderProps) => {
   return (
-    <Swiper spaceBetween={30} slidesPerView={1.7} centeredSlides={true} initialSlide={1}>
+    <Swiper spaceBetween={30} slidesPerView={1.5} centeredSlides={true} initialSlide={1}>
       {images.map((img) => {
         return (
           <SwiperSlide key={img.src}>
