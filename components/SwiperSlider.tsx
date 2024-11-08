@@ -21,7 +21,7 @@ export type SwiperSliderProps = {
 const SwiperSlider = ({ images, initialSlide = 1 }: SwiperSliderProps) => {
   const { breakpoint } = useBreakpoint(BREAKPOINTS, 'mobile')
 
-  const slidePerView = breakpoint === 'mobile' ? 1.2 : breakpoint === 'tablet' ? 1.4 : 1.9
+  const slidePerView = breakpoint === 'mobile' ? 1.3 : breakpoint === 'tablet' ? 1.4 : 1.9
 
   return (
     <Swiper
